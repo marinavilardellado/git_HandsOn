@@ -22,6 +22,6 @@ if re.search("^[ACGTU]+$", args.seq):
         t_content = args.seq.count("T") / lenght *100
         print(f"The G content is {g_content}, the proportion of C is {c_content}, the proportion of a is {a_content}, the proportion of t is {t_content}")
     elif re.search("^[^T]+$", args.seq) and re.search("U", args.seq):
-     #If the sequence do not contains T, but it contains U, for sure it is RNA
+      #If the sequence do not contains T, but it contains U, for sure it is RNA
         u_content = args.seq.count("U") / lenght *100
-        print(f"The G content is {g_content}, the proportion of C is {c_content}, the proportion of A is {a_content}, the proportion of U is {u_content}")
+        print(f"The sequence is RNA. The G content is {g_content}, the proportion of C is {c_content}, the proportion of A is {a_content}, the proportion of U is {u_content}")
